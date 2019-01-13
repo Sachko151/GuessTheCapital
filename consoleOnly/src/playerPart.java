@@ -40,7 +40,7 @@ public class playerPart {
     }
 
     public static boolean checkIfChoicesAreCorrect(String playerOneChoice, String playerTwoChoice) {
-        if ((!(playerOneChoice.equals("heads") ||
+        if ((!(playerOneChoice.equalsIgnoreCase("heads") ||
                 playerOneChoice.equals("tails"))) || (!(playerTwoChoice.equals("heads") ||
                 playerTwoChoice.equals("tails"))) || (playerOneChoice.equals("heads") &&
                 playerTwoChoice.equals("heads")) || (playerOneChoice.equals("tails") &&
