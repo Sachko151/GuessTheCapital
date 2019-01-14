@@ -18,6 +18,8 @@ import javax.swing.SwingConstants;
 
 public class playerPart extends JFrame {
 
+	String playerOneName;
+	String playerTwoName;
 	private JPanel contentPane;
 	private JTextField txtPlayerOneName;
 	private JTextField txtPlayerTwoName;
@@ -46,7 +48,8 @@ public class playerPart extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public playerPart() {
+	public  playerPart() {
+		//static double rosen = 15.5;
 		setTitle("Welcome!");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 685, 485);
@@ -107,6 +110,7 @@ public class playerPart extends JFrame {
 				//heads = 0 tails = 1      
 		        String playerOneName = txtPlayerOneName.getText(); 
 		        String playerTwoName = txtPlayerTwoName.getText();
+		        Data data = new Data(playerOneName, playerTwoName);
 		        String playerOneChoice = txtPlayerOneChoice.getText();
 		        String playerTwoChoice = txtPlayerTwoChoice.getText();
 		        boolean playerOneTurn = false;
@@ -131,22 +135,23 @@ public class playerPart extends JFrame {
 		            if (playerOneTurn) {
 		                lblError.setText("Ïתנגט שו ו: " + playerOneName);
 		                lblError.setForeground(Color.GREEN);
-		                new coreEngine().setVisible(true);
+		                new coreEngine(playerOneName, playerTwoName, playerOneTurn, playerTwoTurn).setVisible(true);
 		                btnStart.setEnabled(false);
 
 		            } else {
 		            	lblError.setText("Ïתנגט שו ו: " + playerTwoName);
 		            	lblError.setForeground(Color.GREEN);
-		            	new coreEngine().setVisible(true);
+		            	new coreEngine(playerOneName, playerTwoName, playerOneTurn, playerTwoTurn).setVisible(true);
 		            	btnStart.setEnabled(false);
 		            }
 		        } else {
 		            lblError.setText("The entered choices weren't correct!");
 		            lblError.setForeground(Color.RED);
 		        }
-		        
 			}
+			
 		});
+
 		btnStart.setBounds(247, 367, 144, 44);
 		contentPane.add(btnStart);
 		
