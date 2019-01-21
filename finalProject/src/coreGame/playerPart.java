@@ -16,6 +16,7 @@ import java.awt.event.ActionListener;
 import java.util.Random;
 import java.awt.event.ActionEvent;
 import javax.swing.ImageIcon;
+import javax.swing.JComboBox;
 
 public class playerPart extends JFrame {
 
@@ -24,11 +25,12 @@ public class playerPart extends JFrame {
     private JPanel contentPane;
     private JTextField txtPlayerOneName;
     private JTextField txtPlayerTwoName;
-    private JTextField txtPlayerOneChoice;
-    private JTextField txtPlayerTwoChoice;
     private JLabel lblResult;
     private JLabel lblError;
     private JButton btnStart;
+    private JComboBox cBPlayerOneChoice;
+    private JComboBox cBPlayerTwoChoice;
+    Thread thread = new Thread();
 
     /**
      * Launch the application.
@@ -84,16 +86,6 @@ public class playerPart extends JFrame {
         lblHeadsOrTails.setBounds(21, 206, 149, 17);
         contentPane.add(lblHeadsOrTails);
 
-        txtPlayerOneChoice = new JTextField();
-        txtPlayerOneChoice.setColumns(10);
-        txtPlayerOneChoice.setBounds(21, 266, 86, 20);
-        contentPane.add(txtPlayerOneChoice);
-
-        txtPlayerTwoChoice = new JTextField();
-        txtPlayerTwoChoice.setColumns(10);
-        txtPlayerTwoChoice.setBounds(528, 266, 86, 20);
-        contentPane.add(txtPlayerTwoChoice);
-
         JLabel lblNameOfPlayer_1 = new JLabel("Име на Играч 2:");
         lblNameOfPlayer_1.setFont(new Font("Tahoma", Font.PLAIN, 18));
         lblNameOfPlayer_1.setBounds(495, 87, 149, 14);
@@ -104,28 +96,42 @@ public class playerPart extends JFrame {
         lblPlayerChoice.setBounds(495, 209, 149, 14);
         contentPane.add(lblPlayerChoice);
 
+        cBPlayerOneChoice = new JComboBox();
+        cBPlayerOneChoice.setBounds(11, 266, 96, 20);
+        cBPlayerOneChoice.addItem("---");
+        cBPlayerOneChoice.addItem("ези");
+        cBPlayerOneChoice.addItem("тура");
+        contentPane.add(cBPlayerOneChoice);
+
+        cBPlayerTwoChoice = new JComboBox();
+        cBPlayerTwoChoice.setBounds(518, 266, 96, 20);
+        cBPlayerTwoChoice.addItem("---");
+        cBPlayerTwoChoice.addItem("ези");
+        cBPlayerTwoChoice.addItem("тура");
+        contentPane.add(cBPlayerTwoChoice);
+
         btnStart = new JButton("Започни Играта!");
         btnStart.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 String playerOneName = txtPlayerOneName.getText();
                 String playerTwoName = txtPlayerTwoName.getText();
-                String playerOneChoice = txtPlayerOneChoice.getText();
-                String playerTwoChoice = txtPlayerTwoChoice.getText();
+                String playerOneChoice = cBPlayerOneChoice.getSelectedItem().toString();
+                String playerTwoChoice = cBPlayerTwoChoice.getSelectedItem().toString();
                 boolean playerOneTurn = false;
                 boolean playerTwoTurn = false;
                 Random rand = new Random();
                 int tailsOrHeads = rand.nextInt(2);
-                switch (tailsOrHeads) {
-                    case 0:
-                        lblResult.setText("Тура!");
-                        lblResult.setIcon(new ImageIcon("src/images/heads.jpg"));
-                        break;
-                    default:
-                        lblResult.setText("Ези!");
-                        lblResult.setIcon(new ImageIcon("src/images/tails.jpg"));
-                        break;
-                }
                 if (checkIfChoicesAreCorrect(playerOneChoice, playerTwoChoice)) {
+                    switch (tailsOrHeads) {
+                        case 0:
+                            lblResult.setText("Тура!");
+                            lblResult.setIcon(new ImageIcon("src/images/heads.jpg"));
+                            break;
+                        default:
+                            lblResult.setText("Ези!");
+                            lblResult.setIcon(new ImageIcon("src/images/tails.jpg"));
+                            break;
+                    }
                     if ((playerOneChoice.equalsIgnoreCase("тура") && tailsOrHeads == 0) ||
                             (playerOneChoice.equalsIgnoreCase("ези") && tailsOrHeads == 1)) {
                         playerOneTurn = true;
@@ -137,10 +143,10 @@ public class playerPart extends JFrame {
                         lblError.setForeground(Color.GREEN);
                         new coreEngine(playerOneName, playerTwoName, playerOneTurn, playerTwoTurn).setVisible(true);
                         btnStart.setEnabled(false);
-
                     } else {
                         lblError.setText("Първи ще е: " + playerTwoName);
                         lblError.setForeground(Color.GREEN);
+
                         new coreEngine(playerOneName, playerTwoName, playerOneTurn, playerTwoTurn).setVisible(true);
                         btnStart.setEnabled(false);
                     }
@@ -151,6 +157,7 @@ public class playerPart extends JFrame {
             }
 
         });
+
 
         btnStart.setBounds(247, 367, 144, 44);
         contentPane.add(btnStart);
@@ -177,6 +184,8 @@ public class playerPart extends JFrame {
         btnNewButton.setForeground(Color.WHITE);
         btnNewButton.setBounds(570, 388, 89, 23);
         contentPane.add(btnNewButton);
+
+
     }
 
     public static boolean checkIfChoicesAreCorrect(String playerOneChoice, String playerTwoChoice) {

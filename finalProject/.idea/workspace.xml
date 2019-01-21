@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64b224ea-0132-4ec2-9750-968c25bf6d24" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../eclipseInterface/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipseInterface/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipseInterface/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipseInterface/bin/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipseInterface/bin/withInterface/coreEngine$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipseInterface/bin/withInterface/coreEngine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipseInterface/bin/withInterface/playerPart$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipseInterface/bin/withInterface/playerPart$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipseInterface/bin/withInterface/playerPart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipseInterface/src/withInterface/Data.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipseInterface/src/withInterface/coreEngine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipseInterface/src/withInterface/playerPart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/coreGame/coreEngine$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/coreGame/coreEngine$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/coreGame/coreEngine$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/coreGame/coreEngine$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/coreGame/coreEngine$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/coreGame/coreEngine$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/coreGame/coreEngine$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/coreGame/coreEngine$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/coreGame/coreEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/coreGame/coreEngine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/coreGame/playerPart$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/coreGame/playerPart$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/coreGame/playerPart$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/coreGame/playerPart$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/coreGame/playerPart$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/coreGame/playerPart$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/coreGame/playerPart.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/coreGame/playerPart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coreGame/playerPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coreGame/playerPart.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,9 +58,11 @@
     <session id="-1321719358">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.63" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -76,6 +77,16 @@
           <entry key="Image" value="1" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="48" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="48" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
@@ -83,32 +94,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/coreGame/playerPart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2669">
-              <caret line="172" column="32" selection-start-line="172" selection-start-column="32" selection-end-line="172" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/coreGame/coreEngine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="357">
+              <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/images/heads.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.classpath">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/coreGame/coreEngine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -148,6 +149,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,16 +157,26 @@
               <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="finalProject" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="coreGame" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547912812351" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547981931522" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/withInterface/coreEngine.java" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -236,8 +248,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2630458" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2683706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -271,28 +284,28 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/withInterface/Data.java" />
-    <entry file="file://$PROJECT_DIR$/src/coreGame/playerPart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2669">
-          <caret line="172" column="32" selection-start-line="172" selection-start-column="32" selection-end-line="172" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.classpath">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/heads.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coreGame/playerPart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/coreGame/coreEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="255">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/heads.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
   <component name="masterDetails">
